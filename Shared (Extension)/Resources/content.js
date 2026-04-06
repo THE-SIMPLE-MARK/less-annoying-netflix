@@ -73,11 +73,4 @@
     });
 
     urlObserver.observe(document, { subtree: true, childList: true });
-
-    window.addEventListener("popstate", () => {
-        browser.runtime.sendMessage({
-            type: "urlChanged",
-            url: window.location.href
-        })
-    });
 })();
