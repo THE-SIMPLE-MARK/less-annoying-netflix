@@ -5,7 +5,7 @@
     window.netflixBypassLoaded = true;
 
     const MODAL_SELECTOR = ".nf-modal.interstitial-full-screen, .nf-modal.uma-modal.two-section-uma";
-    const BACKGROUND_SELECTOR = "[data-uia=\"nf-modal-background\"]";
+    const BACKGROUND_SELECTOR = ".nf-modal-background[data-uia=\"nf-modal-background\"]";
 
     function hideModal(node) {
         // if the added node is a modal, hide it and its background
