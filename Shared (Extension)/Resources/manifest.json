@@ -15,8 +15,7 @@
     },
 
     "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
+        "scripts": [ "background.js" ]
     },
 
     "content_scripts": [{
@@ -29,6 +28,6 @@
         "default_icon": "images/toolbar-icon.svg"
     },
 
-    "permissions": [ "webRequest", "webRequestBlocking", "tabs" ],
+    "permissions": [ "declarativeNetRequest", "tabs" ],
     "host_permissions": [ "*://netflix.com/*", "*://*.netflix.com/*" ]
 }
